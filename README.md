@@ -1,0 +1,64 @@
+# cloud-itonami-municipality-ecu-quito
+
+Municipal-ordinance compliance catalog for **Quito** (Distrito
+Metropolitano de Quito, Ecuador) — the TWENTY-THIRD municipality-level
+entry alongside
+[`cloud-itonami-municipality-jpn-tokyo`](https://github.com/cloud-itonami/cloud-itonami-municipality-jpn-tokyo),
+[`cloud-itonami-municipality-usa-washington-dc`](https://github.com/cloud-itonami/cloud-itonami-municipality-usa-washington-dc),
+[`cloud-itonami-municipality-gbr-london`](https://github.com/cloud-itonami/cloud-itonami-municipality-gbr-london),
+[`cloud-itonami-municipality-can-toronto`](https://github.com/cloud-itonami/cloud-itonami-municipality-can-toronto),
+[`cloud-itonami-municipality-deu-berlin`](https://github.com/cloud-itonami/cloud-itonami-municipality-deu-berlin),
+[`cloud-itonami-municipality-fra-paris`](https://github.com/cloud-itonami/cloud-itonami-municipality-fra-paris),
+[`cloud-itonami-municipality-nld-amsterdam`](https://github.com/cloud-itonami/cloud-itonami-municipality-nld-amsterdam),
+[`cloud-itonami-municipality-esp-madrid`](https://github.com/cloud-itonami/cloud-itonami-municipality-esp-madrid),
+[`cloud-itonami-municipality-kor-seoul`](https://github.com/cloud-itonami/cloud-itonami-municipality-kor-seoul),
+[`cloud-itonami-municipality-ita-roma`](https://github.com/cloud-itonami/cloud-itonami-municipality-ita-roma),
+[`cloud-itonami-municipality-aus-sydney`](https://github.com/cloud-itonami/cloud-itonami-municipality-aus-sydney),
+[`cloud-itonami-municipality-arg-buenos-aires`](https://github.com/cloud-itonami/cloud-itonami-municipality-arg-buenos-aires),
+[`cloud-itonami-municipality-fin-helsinki`](https://github.com/cloud-itonami/cloud-itonami-municipality-fin-helsinki),
+[`cloud-itonami-municipality-dnk-copenhagen`](https://github.com/cloud-itonami/cloud-itonami-municipality-dnk-copenhagen),
+[`cloud-itonami-municipality-nor-oslo`](https://github.com/cloud-itonami/cloud-itonami-municipality-nor-oslo),
+[`cloud-itonami-municipality-bel-brussels`](https://github.com/cloud-itonami/cloud-itonami-municipality-bel-brussels),
+[`cloud-itonami-municipality-chl-santiago`](https://github.com/cloud-itonami/cloud-itonami-municipality-chl-santiago),
+[`cloud-itonami-municipality-col-bogota`](https://github.com/cloud-itonami/cloud-itonami-municipality-col-bogota),
+[`cloud-itonami-municipality-cri-san-jose`](https://github.com/cloud-itonami/cloud-itonami-municipality-cri-san-jose),
+[`cloud-itonami-municipality-bra-sao-paulo`](https://github.com/cloud-itonami/cloud-itonami-municipality-bra-sao-paulo),
+[`cloud-itonami-municipality-ury-montevideo`](https://github.com/cloud-itonami/cloud-itonami-municipality-ury-montevideo),
+and
+[`cloud-itonami-municipality-zaf-cape-town`](https://github.com/cloud-itonami/cloud-itonami-municipality-zaf-cape-town).
+Part of the [`cloud-itonami`](https://github.com/cloud-itonami)
+compliance-fact family (ADR-2607141700,
+`cloud-itonami-compliance-fact-federation`, in `com-junkawasaki/root`).
+
+## Scope
+
+A **read-only reference/archive** catalog — not an Advisor⊣Governor
+actuation actor. It proposes or executes nothing on the Metropolitan
+District of Quito's behalf.
+
+Coverage is reported honestly (see `ordinance.facts/coverage`): a
+municipality not in `catalog` has **no spec-basis**, full stop — never
+fabricate one.
+
+## Data
+
+- `src/ordinance/facts.cljc` — the catalog, source of truth.
+- `schema/ordinance.edn` — DataScript schema.
+- `data/datascript-tx.edn` — derived DataScript tx-data (query this
+  alongside other `cloud-itonami`/`etzhayyim` compliance-fact sources via
+  `com-junkawasaki/root`'s `scripts/compliance-fact-query.cljs`).
+
+Both entries cite [gob.ec](https://www.gob.ec/) (Ecuador's official
+government portal, which also indexes municipal/metropolitan
+ordinances alongside national law), which rendered fully: the
+**Código Municipal para el Distrito Metropolitano de Quito**
+(Ordenanza Metropolitana N.º 072-2024, published 2024-05-30) and
+**Ordenanza Metropolitana N.º 090-2025** (complementary waste-management
+service fees, published 2025-04-09).
+
+## License
+
+AGPL-3.0-or-later (matches the `cloud-itonami-iso3166-*` /
+`-municipality-*` / `-assoc-*` / `-lei-*` convention). Ordinance text
+itself remains the Metropolitan District of Quito's; this repo stores
+only citation metadata (id/title/url/dates), not full text.
